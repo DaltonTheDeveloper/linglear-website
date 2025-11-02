@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linglear — Settings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" style="justify-content: space-between">
+        <a class="logo" href="dashboard.html">LINGLEAR</a>
+        <div style="display: flex; align-items: center; gap: 16px">
+          <span style="color: var(--text-secondary)">Control center</span>
+          <div
+            style="
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background: linear-gradient(135deg, rgba(59, 185, 255, 0.4), rgba(72, 233, 199, 0.4));
+            "
+            aria-hidden="true"
+          ></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="sidebar-layout">
+        <nav class="sidebar">
+          <a href="dashboard.html">Dashboard</a>
+          <a href="watchlist.html">Watchlist</a>
+          <a href="word-bank.html">Learning / Word Bank</a>
+          <a href="community-logged-in.html">Community</a>
+          <a href="settings.html" class="active">Settings</a>
+          <a href="#">Log out</a>
+        </nav>
+        <section>
+          <h1 class="section-title" style="text-align: left">Settings</h1>
+          <p style="color: var(--text-secondary); margin-bottom: 32px">
+            Manage your profile, subscription, privacy, and notifications from one glowing control
+            panel.
+          </p>
+
+          <div class="settings-tabs">
+            <span class="settings-tab active">Profile</span>
+            <span class="settings-tab">Subscription</span>
+            <span class="settings-tab">Privacy</span>
+            <span class="settings-tab">Security</span>
+            <span class="settings-tab">Notifications</span>
+            <span class="settings-tab">Support</span>
+          </div>
+
+          <div class="grid grid-2">
+            <article class="glass-card">
+              <h3>Profile</h3>
+              <form class="contact-form">
+                <label>
+                  <span>Display Name</span>
+                  <input type="text" value="Nova Learner" />
+                </label>
+                <label>
+                  <span>Email</span>
+                  <input type="email" value="nova@example.com" />
+                </label>
+                <label>
+                  <span>Target Language</span>
+                  <input type="text" value="Spanish" disabled />
+                </label>
+                <button class="cta-button" type="submit">Save Profile</button>
+              </form>
+            </article>
+            <article class="glass-card">
+              <h3>Subscription</h3>
+              <p style="color: var(--text-secondary)">
+                You are on the Supporter Kit — $6.99/month. Locked-in Alpha pricing. Manage payment and
+                add credits at any time.
+              </p>
+              <div style="display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap">
+                <button class="cta-button">Change Plan</button>
+                <button class="cta-button" style="background: rgba(59, 185, 255, 0.12); color: var(--accent)">
+                  Cancel Subscription
+                </button>
+                <button class="cta-button" style="background: rgba(72, 233, 199, 0.12); color: var(--success)">
+                  Buy Credits
+                </button>
+              </div>
+            </article>
+            <article class="glass-card">
+              <h3>Privacy</h3>
+              <ul style="color: var(--text-secondary); line-height: 1.8">
+                <li><label><input type="checkbox" checked /> Allow learning analytics</label></li>
+                <li><label><input type="checkbox" /> Save conversation history</label></li>
+                <li><label><input type="checkbox" checked /> Participate in anonymized research</label></li>
+              </ul>
+            </article>
+            <article class="glass-card">
+              <h3>Security</h3>
+              <ul style="color: var(--text-secondary); line-height: 1.8">
+                <li><a href="#">Change password</a></li>
+                <li><a href="#">Enable two-factor authentication</a></li>
+                <li><a href="#">Device management</a></li>
+              </ul>
+            </article>
+            <article class="glass-card">
+              <h3>Notifications</h3>
+              <ul style="color: var(--text-secondary); line-height: 1.8">
+                <li><label><input type="checkbox" checked /> Email me about events</label></li>
+                <li><label><input type="checkbox" checked /> Send streak reminders</label></li>
+                <li><label><input type="checkbox" /> Product updates</label></li>
+              </ul>
+            </article>
+            <article class="glass-card">
+              <h3>Support</h3>
+              <p style="color: var(--text-secondary)">
+                Need help? Browse the FAQ or open a ticket directly from here.
+              </p>
+              <a class="cta-button" href="contact.html">Contact Support</a>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div>
+          <strong class="logo">LINGLEAR</strong>
+          <p style="color: var(--text-secondary); margin-top: 8px">
+            Learn languages while you binge the shows you love. No compromises.
+          </p>
+        </div>
+        <div class="trust-logos" aria-label="Trusted integrations">
+          <span>AWS</span>
+          <span>Cloudflare</span>
+          <span>Stripe</span>
+          <span>Discord</span>
+        </div>
+        <div class="footer-nav">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms</a>
+          <a href="contact.html">Support</a>
+        </div>
+      </div>
+      <p style="text-align: center; color: var(--text-secondary); margin-top: 32px">
+        © <span id="year"></span> Linglear. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="./assets/js/main.js" defer></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linglear — Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" style="justify-content: space-between">
+        <a class="logo" href="dashboard.html">LINGLEAR</a>
+        <div style="display: flex; align-items: center; gap: 16px">
+          <span style="color: var(--text-secondary)">Good evening, Nova!</span>
+          <div
+            style="
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background: linear-gradient(135deg, rgba(59, 185, 255, 0.4), rgba(72, 233, 199, 0.4));
+            "
+            aria-hidden="true"
+          ></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="sidebar-layout">
+        <nav class="sidebar">
+          <a href="dashboard.html" class="active">Dashboard</a>
+          <a href="watchlist.html">Watchlist</a>
+          <a href="word-bank.html">Learning / Word Bank</a>
+          <a href="community-logged-in.html">Community</a>
+          <a href="settings.html">Settings</a>
+          <a href="#">Log out</a>
+        </nav>
+        <section>
+          <h1 class="section-title" style="text-align: left">Your Learning Overview</h1>
+          <p style="color: var(--text-secondary); margin-bottom: 32px">
+            Track your watch time, streaks, and vocabulary wins. Keep the momentum going!
+          </p>
+
+          <div class="dashboard-grid">
+            <article class="glass-card">
+              <h3>Continue Watching</h3>
+              <p style="color: var(--text-secondary)">La Casa de Papel · S2E4</p>
+              <div style="background: rgba(59, 185, 255, 0.15); border-radius: 999px; height: 8px">
+                <div style="width: 72%; background: var(--accent); height: 100%; border-radius: 999px"></div>
+              </div>
+              <button class="cta-button" style="margin-top: 24px">Resume Episode</button>
+            </article>
+            <article class="glass-card">
+              <h3>Today’s Goal</h3>
+              <p style="color: var(--text-secondary)">Watch 30 minutes</p>
+              <div style="display: flex; gap: 16px; margin-top: 24px">
+                <div class="streak-card" style="padding: 16px; flex: 1">
+                  <strong style="font-size: 2rem">24</strong>
+                  <p style="margin: 8px 0 0; color: var(--text-secondary)">Minutes watched</p>
+                </div>
+                <div class="streak-card" style="padding: 16px; flex: 1">
+                  <strong style="font-size: 2rem">6</strong>
+                  <p style="margin: 8px 0 0; color: var(--text-secondary)">New words</p>
+                </div>
+              </div>
+            </article>
+            <article class="glass-card">
+              <h3>Point Summary</h3>
+              <ul style="color: var(--text-secondary); line-height: 1.8">
+                <li>1,240 lifetime points</li>
+                <li>200 bonus points expiring soon</li>
+                <li>Vote tokens: 4</li>
+              </ul>
+              <button class="cta-button" style="margin-top: 12px">Redeem Rewards</button>
+            </article>
+            <article class="streak-card" data-parallax="18">
+              <h3 style="margin-top: 0">Streak</h3>
+              <p style="margin: 8px 0; color: var(--bg-darker); font-weight: 600">🔥 12 day streak!</p>
+              <p style="color: var(--bg-darker)">“Little progress is still progress.”</p>
+            </article>
+          </div>
+
+          <section style="margin-top: 64px" class="grid grid-2">
+            <article class="glass-card">
+              <h3>Recent Vocabulary</h3>
+              <ul style="color: var(--text-secondary); line-height: 1.8">
+                <li><strong>La trama</strong> — the plot</li>
+                <li><strong>El atraco</strong> — the heist</li>
+                <li><strong>Confiar</strong> — to trust</li>
+              </ul>
+            </article>
+            <article class="glass-card">
+              <h3>Community Buzz</h3>
+              <div class="card-list">
+                <div class="notification">Lucía just hit a 7-day streak!</div>
+                <div class="notification">New show unlocked: “El Ministerio del Tiempo”.</div>
+                <div class="notification">Voting closes in 3 hours for “3%” Season 3.</div>
+              </div>
+            </article>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div>
+          <strong class="logo">LINGLEAR</strong>
+          <p style="color: var(--text-secondary); margin-top: 8px">
+            Learn languages while you binge the shows you love. No compromises.
+          </p>
+        </div>
+        <div class="trust-logos" aria-label="Trusted integrations">
+          <span>AWS</span>
+          <span>Cloudflare</span>
+          <span>Stripe</span>
+          <span>Discord</span>
+        </div>
+        <div class="footer-nav">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms</a>
+          <a href="contact.html">Support</a>
+        </div>
+      </div>
+      <p style="text-align: center; color: var(--text-secondary); margin-top: 32px">
+        © <span id="year"></span> Linglear. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="./assets/js/main.js" defer></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
