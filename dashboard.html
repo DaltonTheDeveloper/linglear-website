@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linglear Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header header--minimal">
+      <span class="header__logo">Linglear</span>
+      <nav class="nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="settings.html">Settings</a>
+        <a href="index.html">Sign Out</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="sidebar-layout">
+        <aside class="sidebar">
+          <a class="active" href="dashboard.html">Overview</a>
+          <a href="watchlist.html">Watchlist</a>
+          <a href="learning.html">Word Bank</a>
+          <a href="community-logged.html">Community</a>
+          <a href="settings.html">Settings</a>
+        </aside>
+
+        <section class="section" style="padding-top: 0">
+          <h1 class="section__title">Welcome back, Explorer!</h1>
+          <p class="section__subtitle">Your progress glows brighter every day.</p>
+
+          <div class="dashboard-grid" style="margin-top: 32px">
+            <article class="glass-card">
+              <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 12px">Continue Watching</h3>
+              <p>La Casa de Papel — S1E4</p>
+              <div class="progress"><span style="width: 65%"></span></div>
+            </article>
+            <article class="glass-card">
+              <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 12px">Today’s Goal</h3>
+              <p>Watch 30 minutes · 18 minutes completed</p>
+              <div class="progress"><span style="width: 60%"></span></div>
+            </article>
+            <article class="glass-card">
+              <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 12px">Total Watchtime</h3>
+              <h2 style="font-size: 36px">42 hrs</h2>
+            </article>
+          </div>
+
+          <div class="dashboard-grid" style="margin-top: 32px">
+            <article class="glass-card">
+              <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 12px">Word Highlights</h3>
+              <p>Recent: <span class="tag tag-a1">hola</span> <span class="tag tag-c2">acontecimiento</span></p>
+              <p>Memorized: 240 · Trouble words: 18</p>
+            </article>
+            <article class="glass-card">
+              <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 12px">Streak Counter</h3>
+              <h2 style="font-size: 36px">12 days 🔥</h2>
+              <p class="section__subtitle">“Consistency is your superpower.”</p>
+            </article>
+            <article class="glass-card">
+              <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 12px">Daily Tip</h3>
+              <p>Replay subtitles three times to unlock deeper comprehension.</p>
+            </article>
+          </div>
+
+          <div class="dashboard-grid" style="margin-top: 32px">
+            <article class="glass-card">
+              <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 12px">Community Outreach</h3>
+              <p>“Help Ana reach her 7-day streak with a study high-five.”</p>
+              <button class="btn" style="margin-top: 12px">Send encouragement</button>
+            </article>
+            <article class="glass-card">
+              <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 12px">Point Summary</h3>
+              <ul style="list-style: none; color: var(--text-muted); display: grid; gap: 8px">
+                <li>Total points: 4,560</li>
+                <li>Earned this week: 120</li>
+                <li>Redeemed for: Translation boost</li>
+              </ul>
+            </article>
+            <article class="glass-card">
+              <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 12px">Notifications</h3>
+              <div class="notification-list">
+                <div class="notification-item">Friend reached a 7-day streak.</div>
+                <div class="notification-item">New show “Gran Hotel” translated.</div>
+                <div class="notification-item">Vote completed: “Elite” Season 2.</div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

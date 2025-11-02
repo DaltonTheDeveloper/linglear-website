@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linglear Watchlist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header header--minimal">
+      <span class="header__logo">Linglear</span>
+      <nav class="nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="settings.html">Settings</a>
+        <a href="index.html">Sign Out</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="sidebar-layout">
+        <aside class="sidebar">
+          <a href="dashboard.html">Overview</a>
+          <a class="active" href="watchlist.html">Watchlist</a>
+          <a href="learning.html">Word Bank</a>
+          <a href="community-logged.html">Community</a>
+          <a href="settings.html">Settings</a>
+        </aside>
+
+        <section class="section" style="padding-top: 0">
+          <h1 class="section__title">Your Watchlist</h1>
+          <p class="section__subtitle">Detected automatically by the extension. Filter by show, season, or difficulty.</p>
+
+          <div class="glass-card" style="margin-top: 24px">
+            <div style="display: flex; flex-wrap: wrap; gap: 12px">
+              <span class="badge">Shows</span>
+              <span class="badge">Season</span>
+              <span class="badge">A1 - C2</span>
+              <span class="badge">Recently added</span>
+            </div>
+          </div>
+
+          <div class="feature-grid" style="margin-top: 32px">
+            <article class="community-card" style="text-align: left">
+              <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 12px">Elite</h3>
+              <p>Season 2 · Episode 4 — 72% complete</p>
+              <div class="progress"><span style="width: 72%"></span></div>
+              <div class="badges">
+                <span class="badge">Resume</span>
+                <span class="badge">Vote</span>
+                <span class="badge">Details</span>
+              </div>
+            </article>
+            <article class="community-card" style="text-align: left">
+              <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 12px">Gran Hotel</h3>
+              <p>Season 1 · Episode 6 — 18% complete</p>
+              <div class="progress"><span style="width: 18%"></span></div>
+              <div class="badges">
+                <span class="badge">Resume</span>
+                <span class="badge">Vote</span>
+                <span class="badge">Remove</span>
+              </div>
+            </article>
+            <article class="community-card" style="text-align: left">
+              <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 12px">La Casa de Papel</h3>
+              <p>Season 1 · Episode 5 — 96% complete</p>
+              <div class="progress"><span style="width: 96%"></span></div>
+              <div class="badges">
+                <span class="badge">Resume</span>
+                <span class="badge">Vote</span>
+                <span class="badge">Details</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="glass-card" style="margin-top: 32px">
+            <h2 class="section__title" style="font-size: 28px">Next Show by Popularity</h2>
+            <p class="section__subtitle">“Valeria” is trending · Difficulty B1.</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linglear Community Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header header--minimal">
+      <span class="header__logo">Linglear</span>
+      <nav class="nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="settings.html">Settings</a>
+        <a href="index.html">Sign Out</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="sidebar-layout">
+        <aside class="sidebar">
+          <a href="dashboard.html">Overview</a>
+          <a href="watchlist.html">Watchlist</a>
+          <a href="learning.html">Word Bank</a>
+          <a class="active" href="community-logged.html">Community</a>
+          <a href="settings.html">Settings</a>
+        </aside>
+
+        <section class="section" style="padding-top: 0">
+          <h1 class="section__title">Community Pulse</h1>
+          <p class="section__subtitle">Three-column hub for leaderboards, friend feed, and weekly events.</p>
+
+          <div class="dashboard-grid" style="margin-top: 32px">
+            <article class="glass-card">
+              <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 12px">Voting Leaderboard</h3>
+              <ul style="list-style: none; display: grid; gap: 8px; color: var(--text-muted)">
+                <li>1. Ana — 320 votes</li>
+                <li>2. Marco — 298 votes</li>
+                <li>3. Priya — 260 votes</li>
+              </ul>
+              <p style="margin-top: 12px">Animated countdown resets every Sunday.</p>
+            </article>
+            <article class="glass-card">
+              <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 12px">Friend Activity Feed</h3>
+              <div class="notification-list">
+                <div class="notification-item">Sofia added “Valeria” to her watchlist.</div>
+                <div class="notification-item">Jamal earned the “Polyglot Rising” badge.</div>
+                <div class="notification-item">Camila opened a new study room.</div>
+              </div>
+              <p style="margin-top: 12px">Toggle privacy in Settings.</p>
+            </article>
+            <article class="glass-card">
+              <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 12px">Events &amp; Polls</h3>
+              <ul style="list-style: none; display: grid; gap: 8px; color: var(--text-muted)">
+                <li>Thursday Quiz Night — 7 PM UTC</li>
+                <li>Saturday Watch Party — “Elite” S3</li>
+                <li>Weekly Poll closes in <strong>02:14:56</strong></li>
+              </ul>
+              <a class="btn" style="margin-top: 16px" href="https://discord.com" target="_blank" rel="noopener">Join Discord Study Group</a>
+            </article>
+          </div>
+
+          <div class="glass-card" style="margin-top: 32px">
+            <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 12px">Create a Study Group</h3>
+            <p class="section__subtitle">Auto-generates a Discord channel for your crew.</p>
+            <form class="form" style="margin-top: 16px">
+              <label for="group-name">Group Name</label>
+              <input type="text" id="group-name" name="group-name" placeholder="Neon Night Learners" required />
+
+              <label for="group-focus">Focus</label>
+              <select id="group-focus" name="group-focus">
+                <option>Conversation practice</option>
+                <option>Exam prep</option>
+                <option>Show discussion</option>
+              </select>
+
+              <button class="btn" type="submit">Launch Study Group</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
