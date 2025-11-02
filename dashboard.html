@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linglear Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/app.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a class="logo" href="dashboard.html">Linglear</a>
+        <nav>
+          <ul>
+            <li><a class="active" href="dashboard.html">Dashboard</a></li>
+            <li><a href="watchlist.html">Watchlist</a></li>
+            <li><a href="learning.html">Word Bank</a></li>
+            <li><a href="community-logged.html">Community</a></li>
+            <li><a href="settings.html">Settings</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="sidebar-layout">
+        <aside class="sidebar">
+          <nav>
+            <ul>
+              <li><a class="active" href="dashboard.html">Overview</a></li>
+              <li><a href="watchlist.html">Continue Watching</a></li>
+              <li><a href="learning.html">Word Bank</a></li>
+              <li><a href="community-logged.html">Community</a></li>
+              <li><a href="settings.html">Settings</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <section class="dashboard">
+          <header class="section-header">
+            <h1 class="neon-text">Welcome back, Traveler!</h1>
+            <p>Here’s the latest from your bilingual adventure.</p>
+          </header>
+          <div class="stat-grid">
+            <article class="glass-panel metric">
+              <h2>Continue Watching</h2>
+              <p>“La Sombra del Tiempo” — Episode 5</p>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 68%"></div>
+              </div>
+            </article>
+            <article class="glass-panel metric">
+              <h2>Today’s Goal</h2>
+              <p>Watch 35 minutes</p>
+              <span class="status-badge success">On track</span>
+            </article>
+            <article class="glass-panel metric">
+              <h2>Streak</h2>
+              <p>12 days • “Nunca pares de aprender”</p>
+            </article>
+            <article class="glass-panel metric">
+              <h2>Total Watchtime</h2>
+              <p>58 hours 12 minutes</p>
+            </article>
+          </div>
+          <div class="stat-grid">
+            <article class="glass-panel metric">
+              <h2>Recent Words</h2>
+              <p>Mariposa · susurro · relámpago</p>
+            </article>
+            <article class="glass-panel metric">
+              <h2>Memorized Words</h2>
+              <p>142 mastered</p>
+            </article>
+            <article class="glass-panel metric">
+              <h2>Trouble Words</h2>
+              <p>18 words queued for SRS</p>
+            </article>
+            <article class="glass-panel metric">
+              <h2>Community Prompt</h2>
+              <p>“Share a scene that helped you learn a new idiom.”</p>
+            </article>
+          </div>
+          <div class="glass-panel notification-panel">
+            <h2>Notifications</h2>
+            <ul>
+              <li>Friend Sofia reached a 7-day streak 🎉</li>
+              <li>New show translated: “Ciencia para Todos”</li>
+              <li>Weekly vote closes in 6 hours</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div>
+          <p class="neon-text">Keep the streak alive!</p>
+          <p>Every minute watched adds to your bilingual story.</p>
+        </div>
+        <div>
+          <p>Quick Links</p>
+          <div class="footer-meta">
+            <a href="watchlist.html">Watchlist</a>
+            <a href="learning.html">Word Bank</a>
+            <a href="settings.html">Settings</a>
+          </div>
+        </div>
+        <div>
+          <p>Trusted Infrastructure</p>
+          <div class="trust-icons">
+            <span class="trust-icon">AWS</span>
+            <span class="trust-icon">Cloudflare</span>
+            <span class="trust-icon">Stripe</span>
+          </div>
+        </div>
+      </div>
+      <p class="footer-meta">© 2025 Linglear.</p>
+    </footer>
+    <script src="scripts/main.js" defer></script>
+  </body>
+</html>

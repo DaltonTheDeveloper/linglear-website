@@ -1,0 +1,33 @@
+.community-card {
+  padding: 32px;
+  display: grid;
+  gap: 16px;
+}
+
+.community-card.discord {
+  border: 1px solid rgba(88, 101, 242, 0.35);
+}
+
+.community-card.news {
+  border: 1px solid rgba(255, 99, 99, 0.35);
+}
+
+.community-card.spotify {
+  border: 1px solid rgba(30, 215, 96, 0.35);
+}
+
+.community-card.events {
+  border: 1px solid rgba(251, 197, 49, 0.35);
+}
+
+.newsletter {
+  padding: 36px;
+  display: grid;
+  gap: 16px;
+}
+
+.newsletter-form {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}

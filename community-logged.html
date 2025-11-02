@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linglear Community Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/app.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a class="logo" href="dashboard.html">Linglear</a>
+        <nav>
+          <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="watchlist.html">Watchlist</a></li>
+            <li><a href="learning.html">Word Bank</a></li>
+            <li><a class="active" href="community-logged.html">Community</a></li>
+            <li><a href="settings.html">Settings</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="sidebar-layout">
+        <aside class="sidebar">
+          <nav>
+            <ul>
+              <li><a href="dashboard.html">Overview</a></li>
+              <li><a href="watchlist.html">Watchlist</a></li>
+              <li><a href="learning.html">Word Bank</a></li>
+              <li><a class="active" href="community-logged.html">Community</a></li>
+              <li><a href="settings.html">Settings</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <section class="community-auth">
+          <header class="section-header">
+            <h1 class="neon-text">Community Pulse</h1>
+            <p>See what your friends are watching, voting, and planning this week.</p>
+          </header>
+          <div class="stat-grid">
+            <article class="glass-panel metric">
+              <h2>Friend Activity</h2>
+              <p>Sofia watched “Destino: Patagonia” Episode 3.</p>
+              <p>Marco earned the “Translation Hero” badge.</p>
+            </article>
+            <article class="glass-panel metric">
+              <h2>Study Groups</h2>
+              <p>Create a new group and auto-spin up a Discord channel.</p>
+              <button class="button-primary">Create Group</button>
+            </article>
+            <article class="glass-panel metric">
+              <h2>Voting Leaderboard</h2>
+              <ul>
+                <li>Ana — 124 points</li>
+                <li>Diego — 118 points</li>
+                <li>Luna — 102 points</li>
+              </ul>
+            </article>
+            <article class="glass-panel metric">
+              <h2>Weekly Poll</h2>
+              <p>Which show should we translate next?</p>
+              <button class="button-ghost">Cast Vote</button>
+            </article>
+          </div>
+          <div class="glass-panel events">
+            <h2>Events</h2>
+            <ul>
+              <li>Watch party — Friday 7 PM</li>
+              <li>Vocabulary sprint — Sunday 10 AM</li>
+              <li>Subtitle upload jam — Wednesday 6 PM</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div>
+          <p class="neon-text">Stay social</p>
+          <p>Keep the momentum going with study groups and events.</p>
+        </div>
+        <div>
+          <p>Quick Links</p>
+          <div class="footer-meta">
+            <a href="watchlist.html">Watchlist</a>
+            <a href="learning.html">Word Bank</a>
+            <a href="settings.html">Settings</a>
+          </div>
+        </div>
+        <div>
+          <p>Trusted Infrastructure</p>
+          <div class="trust-icons">
+            <span class="trust-icon">AWS</span>
+            <span class="trust-icon">Cloudflare</span>
+            <span class="trust-icon">Stripe</span>
+          </div>
+        </div>
+      </div>
+      <p class="footer-meta">© 2025 Linglear.</p>
+    </footer>
+    <script src="scripts/main.js" defer></script>
+  </body>
+</html>

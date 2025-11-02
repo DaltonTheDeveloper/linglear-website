@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join the Linglear Alpha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/signup.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a class="logo" href="index.html">Linglear</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a class="active" href="alpha-signup.html">Join Alpha</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="signup-hero">
+        <div class="glass-panel signup-card">
+          <h1>Join the Alpha — Your Spanish Learning Adventure Begins!</h1>
+          <p>
+            Be among the first learners to access community-powered bilingual subtitles, customized
+            study tools, and lifetime pricing.
+          </p>
+          <div class="step-progress">
+            <div class="step active">
+              <span>1</span>
+              <p>Sign Up</p>
+            </div>
+            <div class="step">
+              <span>2</span>
+              <p>Confirm Email</p>
+            </div>
+            <div class="step">
+              <span>3</span>
+              <p>Get Started</p>
+            </div>
+          </div>
+          <form class="alpha-form contact-form">
+            <div class="form-grid">
+              <label>
+                Full Name
+                <input type="text" name="name" placeholder="Alejandro Rivera" required />
+              </label>
+              <label>
+                Email Address
+                <input type="email" name="email" placeholder="you@example.com" required />
+              </label>
+              <label>
+                Learning Goal
+                <select name="goal" required>
+                  <option value="">Select your focus</option>
+                  <option>Conversational fluency</option>
+                  <option>Professional Spanish</option>
+                  <option>Travel preparation</option>
+                  <option>Exam prep</option>
+                </select>
+              </label>
+              <label>
+                Experience Level
+                <select name="level" required>
+                  <option value="">Where are you today?</option>
+                  <option>Beginner (A1-A2)</option>
+                  <option>Intermediate (B1-B2)</option>
+                  <option>Advanced (C1-C2)</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              What kind of content do you love to watch?
+              <textarea rows="4" placeholder="Telenovelas, true crime, anime, dramas..."></textarea>
+            </label>
+            <button class="button-primary" type="submit">Reserve My Spot</button>
+          </form>
+        </div>
+        <aside class="glass-panel signup-sidebar">
+          <h2>What You Get</h2>
+          <ul>
+            <li>Lifetime $5.99/month alpha pricing</li>
+            <li>Early access to subtitle voting + uploads</li>
+            <li>Community Discord and study groups</li>
+            <li>Weekly learning quests & bonus points</li>
+          </ul>
+          <div class="referral">
+            <h3>Referral Program</h3>
+            <p>Limited spots — first come, first served.</p>
+            <ul>
+              <li>Bring 1 friend → half off first month</li>
+              <li>Bring 3 friends → first month free</li>
+              <li>All referrers earn bonus points for 3 months</li>
+            </ul>
+          </div>
+          <div class="security">
+            <p class="neon-text">Security & Payments</p>
+            <div class="trust-icons">
+              <span class="trust-icon">Stripe</span>
+              <span class="trust-icon">SSL</span>
+              <span class="trust-icon">AWS Cognito</span>
+            </div>
+          </div>
+        </aside>
+        <div class="sticky-cta">
+          <a class="button-primary" href="#">Join Alpha</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div>
+          <p class="neon-text">Need help?</p>
+          <p>We’ll get back to you within 24 hours — promise.</p>
+        </div>
+        <div>
+          <p>Alpha Support</p>
+          <div class="footer-meta">
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="community.html">Discord</a>
+          </div>
+        </div>
+        <div>
+          <p>Infrastructure</p>
+          <div class="trust-icons">
+            <span class="trust-icon">Stripe</span>
+            <span class="trust-icon">Cloudflare</span>
+            <span class="trust-icon">AWS</span>
+          </div>
+        </div>
+      </div>
+      <p class="footer-meta">© 2025 Linglear. Learning is better together.</p>
+    </footer>
+    <script src="scripts/main.js" defer></script>
+  </body>
+</html>

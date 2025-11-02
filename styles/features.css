@@ -1,0 +1,23 @@
+.features-grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.feature-card {
+  padding: 36px 32px;
+  display: grid;
+  gap: 16px;
+}
+
+.feature-card ul {
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+}
+
+.future-section {
+  padding: 40px;
+  text-align: center;
+  background: linear-gradient(145deg, rgba(59, 185, 255, 0.14), rgba(59, 185, 255, 0.05));
+}

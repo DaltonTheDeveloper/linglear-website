@@ -1,0 +1,36 @@
+.hero-copy {
+  display: grid;
+  gap: 24px;
+}
+
+.cta-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.counters {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.counter {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.core-panels {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.feature-highlight {
+  padding: 32px;
+}
+
+.video-placeholder {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}

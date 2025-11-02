@@ -1,0 +1,18 @@
+.tech,
+.voting,
+.privacy {
+  padding: 36px;
+  display: grid;
+  gap: 16px;
+}
+
+.voting ul {
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+}
+
+.humor {
+  font-style: italic;
+  color: var(--text-muted);
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Linglear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a class="logo" href="index.html">Linglear</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="glass-panel contact-card">
+          <h1 class="neon-text">Contact Linglear</h1>
+          <p>Send a note to the founding team and we’ll respond within 24 hours.</p>
+          <form class="contact-form">
+            <div class="form-grid">
+              <label>
+                Full Name
+                <input type="text" placeholder="Your name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" placeholder="you@example.com" required />
+              </label>
+              <label>
+                Inquiry Type
+                <select required>
+                  <option value="">Select an option</option>
+                  <option>General Question</option>
+                  <option>Media Inquiry</option>
+                  <option>Partnership</option>
+                </select>
+              </label>
+              <label>
+                Media Inquiry?
+                <select>
+                  <option>None</option>
+                  <option>Press coverage</option>
+                  <option>Podcast request</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              Message
+              <textarea rows="5" placeholder="How can we help?" required></textarea>
+            </label>
+            <button class="button-primary" type="submit">Send Message</button>
+            <p class="confirmation">Auto reply: “We’ll get back to you within 24 hours.”</p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div>
+          <p class="neon-text">Need other help?</p>
+          <p>Check the FAQ or join Discord for community support.</p>
+        </div>
+        <div>
+          <p>Explore</p>
+          <div class="footer-meta">
+            <a href="faq.html">FAQ</a>
+            <a href="community.html">Community</a>
+            <a href="alpha-signup.html">Join Alpha</a>
+          </div>
+        </div>
+        <div>
+          <p>Infrastructure</p>
+          <div class="trust-icons">
+            <span class="trust-icon">AWS</span>
+            <span class="trust-icon">Cloudflare</span>
+            <span class="trust-icon">Stripe</span>
+          </div>
+        </div>
+      </div>
+      <p class="footer-meta">© 2025 Linglear.</p>
+    </footer>
+    <script src="scripts/main.js" defer></script>
+  </body>
+</html>

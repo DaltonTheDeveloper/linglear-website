@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linglear Watchlist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/app.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a class="logo" href="dashboard.html">Linglear</a>
+        <nav>
+          <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a class="active" href="watchlist.html">Watchlist</a></li>
+            <li><a href="learning.html">Word Bank</a></li>
+            <li><a href="community-logged.html">Community</a></li>
+            <li><a href="settings.html">Settings</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="sidebar-layout">
+        <aside class="sidebar">
+          <nav>
+            <ul>
+              <li><a href="dashboard.html">Overview</a></li>
+              <li><a class="active" href="watchlist.html">Watchlist</a></li>
+              <li><a href="learning.html">Word Bank</a></li>
+              <li><a href="community-logged.html">Community</a></li>
+              <li><a href="settings.html">Settings</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <section class="watchlist">
+          <header class="section-header">
+            <h1 class="neon-text">Your shows</h1>
+            <p>Auto-detected by the extension and synced to your account.</p>
+          </header>
+          <div class="tag-row">
+            <span class="tag">Sort: Recent</span>
+            <span class="tag">Difficulty: B1-B2</span>
+            <span class="tag">Translated by Community</span>
+          </div>
+          <div class="watch-grid">
+            <article class="glass-panel watch-card">
+              <h2>La Sombra del Tiempo</h2>
+              <p>Episode 5 • 68% complete</p>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 68%"></div>
+              </div>
+              <div class="watch-actions">
+                <button class="button-primary">Resume</button>
+                <button class="button-ghost">Details</button>
+              </div>
+            </article>
+            <article class="glass-panel watch-card">
+              <h2>Café con Misterio</h2>
+              <p>Season 2 • Episode 1</p>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 24%"></div>
+              </div>
+              <div class="watch-actions">
+                <button class="button-primary">Continue</button>
+                <button class="button-ghost">Vote</button>
+              </div>
+            </article>
+            <article class="glass-panel watch-card">
+              <h2>Ciencia para Todos</h2>
+              <p>Episode 1 • Coming soon</p>
+              <span class="status-badge warning">Translation in progress</span>
+            </article>
+            <article class="glass-panel watch-card">
+              <h2>Destino: Patagonia</h2>
+              <p>Episode 9 • Completed</p>
+              <span class="status-badge success">Memorized</span>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div>
+          <p class="neon-text">Need a new show?</p>
+          <p>Browse community votes to pick your next binge-learning adventure.</p>
+        </div>
+        <div>
+          <p>Quick Links</p>
+          <div class="footer-meta">
+            <a href="community-logged.html">Community</a>
+            <a href="learning.html">Word Bank</a>
+            <a href="settings.html">Settings</a>
+          </div>
+        </div>
+        <div>
+          <p>Trusted Infrastructure</p>
+          <div class="trust-icons">
+            <span class="trust-icon">AWS</span>
+            <span class="trust-icon">Cloudflare</span>
+            <span class="trust-icon">Stripe</span>
+          </div>
+        </div>
+      </div>
+      <p class="footer-meta">© 2025 Linglear.</p>
+    </footer>
+    <script src="scripts/main.js" defer></script>
+  </body>
+</html>

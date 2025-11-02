@@ -1,0 +1,10 @@
+.contact-card {
+  padding: 40px;
+  display: grid;
+  gap: 20px;
+}
+
+.confirmation {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}

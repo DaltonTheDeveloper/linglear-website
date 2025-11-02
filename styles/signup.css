@@ -1,0 +1,95 @@
+.signup-hero {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr);
+  position: relative;
+}
+
+.signup-card {
+  padding: 40px;
+}
+
+.signup-sidebar {
+  padding: 32px;
+}
+
+.step-progress {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 24px 0 32px;
+}
+
+.step {
+  padding: 16px;
+  text-align: center;
+  border-radius: var(--card-radius);
+  background: rgba(59, 185, 255, 0.08);
+  border: 1px solid rgba(59, 185, 255, 0.2);
+  transition: background var(--transition);
+}
+
+.step span {
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(59, 185, 255, 0.16);
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.step.active {
+  background: rgba(59, 185, 255, 0.18);
+  border-color: rgba(59, 185, 255, 0.45);
+}
+
+.signup-sidebar ul {
+  margin: 16px 0 24px;
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+}
+
+.signup-sidebar li {
+  color: var(--text-muted);
+}
+
+.referral ul {
+  padding-left: 18px;
+  display: grid;
+  gap: 6px;
+}
+
+.sticky-cta {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 16px;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity var(--transition), transform var(--transition);
+}
+
+.sticky-cta.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.sticky-cta .button-primary {
+  width: calc(100% - 48px);
+  max-width: 420px;
+}
+
+@media (max-width: 960px) {
+  .signup-hero {
+    grid-template-columns: 1fr;
+  }
+}

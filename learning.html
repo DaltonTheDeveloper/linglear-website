@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linglear Word Bank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/app.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a class="logo" href="dashboard.html">Linglear</a>
+        <nav>
+          <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="watchlist.html">Watchlist</a></li>
+            <li><a class="active" href="learning.html">Word Bank</a></li>
+            <li><a href="community-logged.html">Community</a></li>
+            <li><a href="settings.html">Settings</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="sidebar-layout">
+        <aside class="sidebar">
+          <nav>
+            <ul>
+              <li><a href="dashboard.html">Overview</a></li>
+              <li><a href="watchlist.html">Watchlist</a></li>
+              <li><a class="active" href="learning.html">Word Bank</a></li>
+              <li><a href="community-logged.html">Community</a></li>
+              <li><a href="settings.html">Settings</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <section class="word-bank">
+          <header class="section-header">
+            <h1 class="neon-text">Learning Hub</h1>
+            <p>Track vocabulary difficulty, sync flashcards, and trigger confetti when goals hit.</p>
+          </header>
+          <div class="word-actions">
+            <button class="button-primary">Upload Results</button>
+            <button class="button-ghost">Download Flashcards</button>
+            <button class="button-ghost">Study Now</button>
+          </div>
+          <div class="tabs" data-tab-group>
+            <div class="tab-buttons">
+              <button data-tab-target="all">All Words</button>
+              <button data-tab-target="difficult">Difficult Words</button>
+              <button data-tab-target="mastered">Mastered Words</button>
+            </div>
+            <div class="tab-panel glass-panel" data-tab-panel="all">
+              <table class="word-table">
+                <thead>
+                  <tr>
+                    <th>Word</th>
+                    <th>Show</th>
+                    <th>Difficulty</th>
+                    <th>Last Reviewed</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Susurro</td>
+                    <td>La Sombra del Tiempo</td>
+                    <td><span class="tag">B2</span></td>
+                    <td>2 days ago</td>
+                  </tr>
+                  <tr>
+                    <td>Ráfaga</td>
+                    <td>Café con Misterio</td>
+                    <td><span class="tag">C1</span></td>
+                    <td>4 days ago</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="tab-panel glass-panel" data-tab-panel="difficult">
+              <p>18 words queued for SRS — next review in 4 hours.</p>
+            </div>
+            <div class="tab-panel glass-panel" data-tab-panel="mastered">
+              <p>142 words celebrated with subtle confetti animation.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div>
+          <p class="neon-text">Celebrate the wins</p>
+          <p>Every mastered word unlocks a new badge for your profile.</p>
+        </div>
+        <div>
+          <p>Quick Links</p>
+          <div class="footer-meta">
+            <a href="watchlist.html">Watchlist</a>
+            <a href="community-logged.html">Community</a>
+            <a href="settings.html">Settings</a>
+          </div>
+        </div>
+        <div>
+          <p>Trusted Infrastructure</p>
+          <div class="trust-icons">
+            <span class="trust-icon">AWS</span>
+            <span class="trust-icon">Cloudflare</span>
+            <span class="trust-icon">Stripe</span>
+          </div>
+        </div>
+      </div>
+      <p class="footer-meta">© 2025 Linglear.</p>
+    </footer>
+    <script src="scripts/main.js" defer></script>
+  </body>
+</html>

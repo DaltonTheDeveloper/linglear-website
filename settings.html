@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linglear Settings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/app.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a class="logo" href="dashboard.html">Linglear</a>
+        <nav>
+          <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="watchlist.html">Watchlist</a></li>
+            <li><a href="learning.html">Word Bank</a></li>
+            <li><a href="community-logged.html">Community</a></li>
+            <li><a class="active" href="settings.html">Settings</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="sidebar-layout">
+        <aside class="sidebar">
+          <nav>
+            <ul>
+              <li><a href="dashboard.html">Overview</a></li>
+              <li><a href="watchlist.html">Watchlist</a></li>
+              <li><a href="learning.html">Word Bank</a></li>
+              <li><a href="community-logged.html">Community</a></li>
+              <li><a class="active" href="settings.html">Settings</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <section class="settings">
+          <header class="section-header">
+            <h1 class="neon-text">Settings</h1>
+            <p>Manage your account, privacy, security, and notifications.</p>
+          </header>
+          <div class="settings-grid">
+            <article class="glass-panel settings-card">
+              <h2>Profile</h2>
+              <label>
+                Username
+                <input type="text" value="traveler-aurora" />
+              </label>
+              <label>
+                Email
+                <input type="email" value="traveler@example.com" />
+              </label>
+              <label>
+                Target Language
+                <input type="text" value="Spanish" disabled />
+              </label>
+            </article>
+            <article class="glass-panel settings-card">
+              <h2>Subscription</h2>
+              <p>Alpha Plan — $5.99/month</p>
+              <button class="button-primary">Manage Plan</button>
+              <button class="button-ghost">Buy Credits</button>
+            </article>
+            <article class="glass-panel settings-card">
+              <h2>Privacy</h2>
+              <div class="toggle-group">
+                <label><input type="checkbox" checked /> Allow anonymous analytics</label>
+                <label><input type="checkbox" /> Disable conversation saving</label>
+              </div>
+            </article>
+            <article class="glass-panel settings-card">
+              <h2>Security</h2>
+              <button class="button-primary">Change Password</button>
+              <button class="button-ghost">Enable 2FA</button>
+            </article>
+            <article class="glass-panel settings-card">
+              <h2>Notifications</h2>
+              <div class="toggle-group">
+                <label><input type="checkbox" checked /> Event reminders</label>
+                <label><input type="checkbox" checked /> Weekly news email</label>
+                <label><input type="checkbox" /> Study group invites</label>
+              </div>
+            </article>
+            <article class="glass-panel settings-card">
+              <h2>Support</h2>
+              <p>Need help? <a href="contact.html">Contact us</a> or visit the FAQ.</p>
+              <button class="button-ghost">Open Support Form</button>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div>
+          <p class="neon-text">Your account, your rules</p>
+          <p>Set preferences and we’ll remember them across every device.</p>
+        </div>
+        <div>
+          <p>Quick Links</p>
+          <div class="footer-meta">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="watchlist.html">Watchlist</a>
+            <a href="learning.html">Word Bank</a>
+          </div>
+        </div>
+        <div>
+          <p>Trusted Infrastructure</p>
+          <div class="trust-icons">
+            <span class="trust-icon">AWS</span>
+            <span class="trust-icon">Cloudflare</span>
+            <span class="trust-icon">Stripe</span>
+          </div>
+        </div>
+      </div>
+      <p class="footer-meta">© 2025 Linglear.</p>
+    </footer>
+    <script src="scripts/main.js" defer></script>
+  </body>
+</html>
