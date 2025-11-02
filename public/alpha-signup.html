@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linglear — Join the Alpha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body id="top">
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="index.html">LINGLEAR</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="community.html">Community</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <a class="cta-button" href="alpha-signup.html">Join Alpha</a>
+      </nav>
+    </header>
+
+    <main class="narrow">
+      <h1 class="section-title">Join the Alpha — Your Spanish Learning Adventure Begins!</h1>
+      <p class="section-subtitle">
+        Secure your spot in our limited Alpha program and be one of the first to experience
+        community-driven subtitles, rewards, and futuristic language immersion.
+      </p>
+
+      <div class="progress-steps" aria-label="Signup steps">
+        <span class="progress-step">1. Sign Up</span>
+        <span class="progress-step">2. Confirm Email</span>
+        <span class="progress-step">3. Get Started</span>
+      </div>
+
+      <div class="sidebar-layout">
+        <aside class="sidebar">
+          <h3>What You Get</h3>
+          <p>✔️ Early access to bilingual subtitle overlays</p>
+          <p>✔️ Locked-in Alpha pricing for life</p>
+          <p>✔️ Community voting power & bonus points</p>
+          <p>✔️ Private Discord access & events</p>
+        </aside>
+        <section>
+          <div class="glass-card">
+            <h2 style="margin-top: 0">Reserve Your Spot</h2>
+            <p style="color: var(--text-secondary)">
+              Fill out the form below to create your Cognito account. Once confirmed, you’ll receive
+              onboarding instructions and a link to install the extension.
+            </p>
+            <form class="contact-form">
+              <label>
+                <span>Full Name</span>
+                <input type="text" name="full_name" placeholder="Ada Lovelace" required />
+              </label>
+              <label>
+                <span>Email Address</span>
+                <input type="email" name="email" placeholder="you@example.com" required />
+              </label>
+              <label>
+                <span>Password</span>
+                <input type="password" name="password" placeholder="Create a secure password" required />
+              </label>
+              <label>
+                <span>Learning Goal</span>
+                <select name="goal" required>
+                  <option value="">Select your primary goal</option>
+                  <option>Travel & Culture</option>
+                  <option>Career Growth</option>
+                  <option>Exam Preparation</option>
+                  <option>Fun & Community</option>
+                </select>
+              </label>
+              <label>
+                <span>Experience Level</span>
+                <select name="experience" required>
+                  <option value="">Choose your current level</option>
+                  <option>Beginner (A1-A2)</option>
+                  <option>Intermediate (B1-B2)</option>
+                  <option>Advanced (C1-C2)</option>
+                </select>
+              </label>
+              <label>
+                <span>Referral Code (Optional)</span>
+                <input type="text" name="referral" placeholder="Share the love" />
+              </label>
+              <button type="submit" class="cta-button">Join the Alpha</button>
+            </form>
+          </div>
+          <div class="glass-card" style="margin-top: 32px">
+            <h3>Referral Program</h3>
+            <ul style="color: var(--text-secondary); line-height: 1.8">
+              <li>Bring 1 friend → half off your first month.</li>
+              <li>Bring 3 friends → first month free.</li>
+              <li>Bonus points for each friend for 3 months.</li>
+            </ul>
+            <p style="color: var(--text-secondary)">
+              Limited spots — first come, first served. We’ll notify you as soon as your invite is
+              ready.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="sticky-cta" style="position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);">
+      <a class="cta-button" href="#top">Join Alpha</a>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div>
+          <strong class="logo">LINGLEAR</strong>
+          <p style="color: var(--text-secondary); margin-top: 8px">
+            Learn languages while you binge the shows you love. No compromises.
+          </p>
+        </div>
+        <div class="trust-logos" aria-label="Trusted integrations">
+          <span>AWS</span>
+          <span>Cloudflare</span>
+          <span>Stripe</span>
+          <span>Discord</span>
+        </div>
+        <div class="footer-nav">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms</a>
+          <a href="contact.html">Support</a>
+        </div>
+      </div>
+      <p style="text-align: center; color: var(--text-secondary); margin-top: 32px">
+        © <span id="year"></span> Linglear. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="./assets/js/main.js" defer></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

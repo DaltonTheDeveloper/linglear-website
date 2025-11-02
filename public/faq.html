@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linglear — FAQ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="index.html">LINGLEAR</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="community.html">Community</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <a class="cta-button" href="alpha-signup.html">Join Alpha</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="section-title">Frequently Asked Questions</h1>
+      <p class="section-subtitle">
+        Answers to the most common questions about the Alpha program, pricing, and how Linglear works
+        with your favorite streaming services.
+      </p>
+
+      <div class="faq">
+        <details class="accordion" open>
+          <summary>Does it work without Netflix Premium?</summary>
+          <p style="color: var(--text-secondary); margin-top: 16px">
+            Linglear integrates with supported streaming accounts. Netflix Premium is recommended for
+            simultaneous bilingual subtitles, but we provide alternative options for other tiers.
+          </p>
+        </details>
+        <details class="accordion">
+          <summary>Can I cancel anytime?</summary>
+          <p style="color: var(--text-secondary); margin-top: 16px">
+            Absolutely. Manage your subscription directly in the Settings page and cancel with one
+            click. You’ll keep access until the end of your billing cycle.
+          </p>
+        </details>
+        <details class="accordion">
+          <summary>Why no refunds during alpha?</summary>
+          <p style="color: var(--text-secondary); margin-top: 16px">
+            Alpha pricing is discounted heavily to help us cover infrastructure and translation costs.
+            We focus on rapid iteration, but we’re always open to feedback if something isn’t right.
+          </p>
+        </details>
+        <details class="accordion">
+          <summary>Will other streaming sites be supported?</summary>
+          <p style="color: var(--text-secondary); margin-top: 16px">
+            Yes! Crunchyroll, Disney+, and Hulu are at the top of the list. Vote for your preferred
+            integrations from the community dashboard.
+          </p>
+        </details>
+      </div>
+
+      <div class="glass-card" style="margin-top: 80px; text-align: center">
+        <h3>Still need help?</h3>
+        <p style="color: var(--text-secondary)">
+          Reach out via our contact form and we’ll respond within 24 hours.
+        </p>
+        <a class="cta-button" href="contact.html">Contact Support</a>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div>
+          <strong class="logo">LINGLEAR</strong>
+          <p style="color: var(--text-secondary); margin-top: 8px">
+            Learn languages while you binge the shows you love. No compromises.
+          </p>
+        </div>
+        <div class="trust-logos" aria-label="Trusted integrations">
+          <span>AWS</span>
+          <span>Cloudflare</span>
+          <span>Stripe</span>
+          <span>Discord</span>
+        </div>
+        <div class="footer-nav">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms</a>
+          <a href="contact.html">Support</a>
+        </div>
+      </div>
+      <p style="text-align: center; color: var(--text-secondary); margin-top: 32px">
+        © <span id="year"></span> Linglear. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="./assets/js/main.js" defer></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

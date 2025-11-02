@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linglear — Watch Your Favorite Shows While Learning Too!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="index.html">LINGLEAR</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="community.html">Community</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <a class="cta-button" href="alpha-signup.html">Join Alpha</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" data-parallax="20">
+        <div class="hero-content">
+          <div>
+            <span class="tag">Streaming + Learning</span>
+            <h1>Watch Your Favorite Shows While Learning Too!</h1>
+            <p>
+              Learning languages with subtitles has never felt so easy. Experience bilingual
+              subtitles, community translations, and a gamified system that keeps you motivated.
+            </p>
+            <a class="cta-button" href="alpha-signup.html">Join Alpha</a>
+            <div class="stats" aria-label="Linglear community impact">
+              <div class="stat">
+                <strong data-counter="52743">0</strong>
+                Subtitles translated
+              </div>
+              <div class="stat">
+                <strong data-counter="121908">0</strong>
+                Community votes cast
+              </div>
+              <div class="stat">
+                <strong data-counter="8941">0</strong>
+                Hours of learning
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="glass-card" style="min-height: 260px">
+              <h3>See it in action</h3>
+              <p class="section-subtitle" style="margin: 12px 0 20px; text-align: left">
+                Mockup video placeholder showing bilingual subtitle magic across Netflix, Crunchyroll,
+                and more.
+              </p>
+              <div
+                style="
+                  height: 180px;
+                  border-radius: 18px;
+                  background: rgba(59, 185, 255, 0.08);
+                  border: 1px dashed rgba(59, 185, 255, 0.3);
+                  display: grid;
+                  place-items: center;
+                  color: var(--text-secondary);
+                  font-size: 0.9rem;
+                "
+              >
+                Demo video placeholder
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top: 100px">
+        <h2 class="section-title">Community-Powered Language Learning</h2>
+        <p class="section-subtitle">
+          Crowd-sourced subtitles, fair pricing, and collaborative learning blend into a single
+          platform that feels as fun as watching your favorite show.
+        </p>
+        <div class="feature-grid">
+          <article class="glass-card feature-card">
+            <h3>Crowd-Sourced Subtitles</h3>
+            <p>
+              The community uploads and refines translations so you always have the most accurate
+              subtitles in both languages.
+            </p>
+          </article>
+          <article class="glass-card feature-card">
+            <h3>Low Machine Learning Costs</h3>
+            <p>
+              Innovative ML tooling keeps translation costs low, helping us offer affordable plans
+              during the Alpha.
+            </p>
+          </article>
+          <article class="glass-card feature-card">
+            <h3>Community Voting</h3>
+            <p>
+              Cast votes on subtitle quality, future shows, and playlist additions to shape the
+              Linglear experience together.
+            </p>
+          </article>
+          <article class="glass-card feature-card">
+            <h3>Point System</h3>
+            <p>
+              Earn points as you learn, help others, and participate in events. Redeem them for
+              perks once we hit public launch.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div>
+          <strong class="logo">LINGLEAR</strong>
+          <p style="color: var(--text-secondary); margin-top: 8px">
+            Learn languages while you binge the shows you love. No compromises.
+          </p>
+        </div>
+        <div class="trust-logos" aria-label="Trusted integrations">
+          <span>AWS</span>
+          <span>Cloudflare</span>
+          <span>Stripe</span>
+          <span>Discord</span>
+        </div>
+        <div class="footer-nav">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms</a>
+          <a href="contact.html">Support</a>
+        </div>
+      </div>
+      <p style="text-align: center; color: var(--text-secondary); margin-top: 32px">
+        © <span id="year"></span> Linglear. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="./assets/js/main.js" defer></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

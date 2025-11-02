@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linglear — Learning / Word Bank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" style="justify-content: space-between">
+        <a class="logo" href="dashboard.html">LINGLEAR</a>
+        <div style="display: flex; align-items: center; gap: 16px">
+          <span style="color: var(--text-secondary)">Word mastery in motion</span>
+          <div
+            style="
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background: linear-gradient(135deg, rgba(59, 185, 255, 0.4), rgba(72, 233, 199, 0.4));
+            "
+            aria-hidden="true"
+          ></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="sidebar-layout">
+        <nav class="sidebar">
+          <a href="dashboard.html">Dashboard</a>
+          <a href="watchlist.html">Watchlist</a>
+          <a href="word-bank.html" class="active">Learning / Word Bank</a>
+          <a href="community-logged-in.html">Community</a>
+          <a href="settings.html">Settings</a>
+          <a href="#">Log out</a>
+        </nav>
+        <section>
+          <h1 class="section-title" style="text-align: left">Learning / Word Bank</h1>
+          <p style="color: var(--text-secondary); margin-bottom: 32px">
+            Review your vocabulary tabs, queue spaced repetition practice, and celebrate those confetti
+            moments.
+          </p>
+
+          <div class="settings-tabs">
+            <span class="settings-tab active">All Words</span>
+            <span class="settings-tab">Difficult Words</span>
+            <span class="settings-tab">Mastered Words</span>
+          </div>
+
+          <div class="glass-card" style="position: relative">
+            <button class="cta-button" style="position: absolute; top: 24px; right: 24px">Upload Results</button>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Word</th>
+                  <th>Show</th>
+                  <th>Difficulty</th>
+                  <th>Status</th>
+                  <th>SRS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>La intriga</td>
+                  <td>La Casa de Papel</td>
+                  <td><span class="difficulty-tag difficulty-B2">B2</span></td>
+                  <td>In review</td>
+                  <td><input type="checkbox" checked /></td>
+                </tr>
+                <tr>
+                  <td>La confianza</td>
+                  <td>Elite</td>
+                  <td><span class="difficulty-tag difficulty-C1">C1</span></td>
+                  <td>Mastered</td>
+                  <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                  <td>El repaso</td>
+                  <td>Merlí</td>
+                  <td><span class="difficulty-tag difficulty-A1">A1</span></td>
+                  <td>Trouble list</td>
+                  <td><input type="checkbox" checked /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <section style="margin-top: 64px" class="grid grid-2">
+            <article class="glass-card">
+              <h3>Study Now</h3>
+              <p style="color: var(--text-secondary)">
+                Launch a quick quiz with 10 words from your SRS queue. Confetti celebrates every perfect
+                round.
+              </p>
+              <button class="cta-button">Start Quiz</button>
+            </article>
+            <article class="glass-card">
+              <h3>Daily Tip</h3>
+              <p style="color: var(--text-secondary)">
+                Watch episodes with Spanish audio + English subtitles for the first pass, then swap for
+                the second viewing.
+              </p>
+            </article>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div>
+          <strong class="logo">LINGLEAR</strong>
+          <p style="color: var(--text-secondary); margin-top: 8px">
+            Learn languages while you binge the shows you love. No compromises.
+          </p>
+        </div>
+        <div class="trust-logos" aria-label="Trusted integrations">
+          <span>AWS</span>
+          <span>Cloudflare</span>
+          <span>Stripe</span>
+          <span>Discord</span>
+        </div>
+        <div class="footer-nav">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms</a>
+          <a href="contact.html">Support</a>
+        </div>
+      </div>
+      <p style="text-align: center; color: var(--text-secondary); margin-top: 32px">
+        © <span id="year"></span> Linglear. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="./assets/js/main.js" defer></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

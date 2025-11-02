@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linglear — Community Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="index.html">LINGLEAR</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="community.html">Community</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <a class="cta-button" href="alpha-signup.html">Join Alpha</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="section-title">Step Into the Linglear Community</h1>
+      <p class="section-subtitle">
+        Meet other learners, vote on the next shows, and jam out with curated playlists. Our
+        community keeps the experience vibrant and collaborative.
+      </p>
+
+      <div class="community-slider" aria-label="Community highlights">
+        <article class="glass-card community-card" style="border-top-color: #3bb9ff">
+          <h2>Join the Discord</h2>
+          <p style="color: var(--text-secondary)">
+            Jump into daily conversations, study rooms, and live subtitle parties.
+          </p>
+          <a class="cta-button" href="#">Open Invite</a>
+        </article>
+        <article class="glass-card community-card" style="border-top-color: #ffd166">
+          <h2>Events Calendar</h2>
+          <p style="color: var(--text-secondary)">
+            Weekly quizzes, show premieres, and conversation hours across time zones.
+          </p>
+          <div class="card-list">
+            <span>🗓️ Thursday: Netflix Nights</span>
+            <span>🎮 Saturday: Vocabulary Challenges</span>
+            <span>🎤 Sunday: Karaoke Español</span>
+          </div>
+        </article>
+        <article class="glass-card community-card" style="border-top-color: #48e9c7">
+          <h2>Spotify Playlist</h2>
+          <p style="color: var(--text-secondary)">
+            Listen, learn, and add your favorite Spanish tracks to our collaborative playlist.
+          </p>
+          <a class="cta-button" href="#">Listen Now</a>
+        </article>
+        <article class="glass-card community-card" style="border-top-color: #ff6b81">
+          <h2>Spanish News Feed</h2>
+          <p style="color: var(--text-secondary)">
+            Stay up to date with curated Spanish articles. Perfect for quick reading bursts.
+          </p>
+          <ul style="color: var(--text-secondary); line-height: 1.8">
+            <li>Daily highlights from trusted sources.</li>
+            <li>Community annotations for tricky vocabulary.</li>
+            <li>Saved to your word bank automatically.</li>
+          </ul>
+        </article>
+      </div>
+
+      <section style="margin-top: 80px">
+        <div class="glass-card">
+          <h3>Newsletter Sign-Up</h3>
+          <p style="color: var(--text-secondary)">
+            Get weekly community updates, upcoming votes, and new show announcements.
+          </p>
+          <form class="contact-form" style="max-width: 420px">
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <button type="submit" class="cta-button">Stay in the Loop</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div>
+          <strong class="logo">LINGLEAR</strong>
+          <p style="color: var(--text-secondary); margin-top: 8px">
+            Learn languages while you binge the shows you love. No compromises.
+          </p>
+        </div>
+        <div class="trust-logos" aria-label="Trusted integrations">
+          <span>AWS</span>
+          <span>Cloudflare</span>
+          <span>Stripe</span>
+          <span>Discord</span>
+        </div>
+        <div class="footer-nav">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms</a>
+          <a href="contact.html">Support</a>
+        </div>
+      </div>
+      <p style="text-align: center; color: var(--text-secondary); margin-top: 32px">
+        © <span id="year"></span> Linglear. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="./assets/js/main.js" defer></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
