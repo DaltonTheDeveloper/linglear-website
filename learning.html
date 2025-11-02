@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linglear Word Bank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header header--minimal">
+      <span class="header__logo">Linglear</span>
+      <nav class="nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="settings.html">Settings</a>
+        <a href="index.html">Sign Out</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="sidebar-layout">
+        <aside class="sidebar">
+          <a href="dashboard.html">Overview</a>
+          <a href="watchlist.html">Watchlist</a>
+          <a class="active" href="learning.html">Word Bank</a>
+          <a href="community-logged.html">Community</a>
+          <a href="settings.html">Settings</a>
+        </aside>
+
+        <section class="section" style="padding-top: 0">
+          <h1 class="section__title">Word Bank &amp; SRS</h1>
+          <p class="section__subtitle">Categorize words by difficulty, download flashcards, and launch quick quizzes.</p>
+
+          <div class="card-grid" style="margin-top: 24px">
+            <article class="glass-card">
+              <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 12px">All Words</h3>
+              <p>Total: 1,240 words</p>
+            </article>
+            <article class="glass-card">
+              <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 12px">Difficult</h3>
+              <p>Flagged: 74 words</p>
+            </article>
+            <article class="glass-card">
+              <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 12px">Mastered</h3>
+              <p>Victory confetti earned: 182 words</p>
+            </article>
+          </div>
+
+          <div class="glass-card" style="margin-top: 32px">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Word</th>
+                  <th>Show</th>
+                  <th>Difficulty</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>hola</td>
+                  <td>Elite</td>
+                  <td><span class="tag tag-a1">A1</span></td>
+                  <td>
+                    <span class="badge">Add to SRS</span>
+                    <span class="badge">Mark mastered</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>acontecimiento</td>
+                  <td>Gran Hotel</td>
+                  <td><span class="tag tag-c2">C2</span></td>
+                  <td>
+                    <span class="badge">Add to SRS</span>
+                    <span class="badge">Practice</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>aprovechar</td>
+                  <td>La Casa de Papel</td>
+                  <td><span class="badge">B2</span></td>
+                  <td>
+                    <span class="badge">Add to SRS</span>
+                    <span class="badge">Mark mastered</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="glass-card" style="margin-top: 32px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px">
+            <div>
+              <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 8px">Sync Your Progress</h3>
+              <p class="section__subtitle">Upload app results or download flashcards per show/season.</p>
+            </div>
+            <div style="display: flex; gap: 12px">
+              <button class="btn">Upload Results</button>
+              <button class="btn">Download Flashcards</button>
+            </div>
+          </div>
+
+          <div class="glass-card" style="margin-top: 32px">
+            <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 12px">Study Now</h3>
+            <p>Launch a mini quiz and celebrate with subtle confetti when you hit your streak goal.</p>
+            <button class="btn" style="margin-top: 12px">Start Quiz</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
